@@ -1,0 +1,121 @@
+*{
+    background-color: black;
+}
+.main-accordian-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    flex-direction: column;
+}
+.post-accordian-wrapper{
+    margin-top: 70px;
+    display: flex;
+   padding-left: 40px;
+}
+.text-btn{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    max-width: 500px;
+}
+.text-btn h1{
+    color: white;
+}
+.post-btn{
+    width: 50px;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    color: white;
+}
+.input-form{
+    display: none;
+}
+.input-form.open{
+    display: flex;
+}
+.add-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.email-input{
+    margin: 10px 0;
+    color: white;
+    width:  clamp(9.375rem, -78.125rem + 200vw, 34.375rem);
+    height: 50px;
+    border-radius: 20px;
+}
+.query-input{
+    width:  clamp(9.375rem, -78.125rem + 200vw, 34.375rem);
+    color: white;
+    border-radius: 20px;
+    height: clamp(1.25rem, -5.3125rem + 15vw, 3.125rem);;
+}
+.add-contact input{
+    border: 1px solid grey;
+    height: 40px;
+}
+.add-contact input::placeholder{
+    padding: 10px;
+}
+.submit-value{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: orange;
+    transition: transform 0.3s;
+}
+.submit-value:hover{
+    box-shadow: 0 0 40px orange;
+    transform: translateX(30px);
+    cursor: pointer;
+}
+.get-value{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    transition: transform 0.3s;
+}
+.get-value:hover{
+    box-shadow: 0 0 20px orange;
+    transform: translateX(30px);
+    cursor: pointer;
+}
+.get-all-values{
+    margin-top: 30px;
+    overflow: hidden;
+}
+.get-all-values h2{
+    margin-bottom: 10px;
+}
+.faqs{
+    font-size: 40px;
+    margin-top: 15px;
+    color: white;
+    font-weight: 0;
+}
+
+.user-email{
+    color: orange;
+}
+.user-query{
+    color: white;
+    font-weight: 10;
+}
+@media (max-width: 750px){
+    .email-input{
+        height: 10px;
+    }
+    .query-input{
+        height: 10px;
+    }
+}
+
