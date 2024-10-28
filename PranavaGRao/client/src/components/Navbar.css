@@ -1,0 +1,91 @@
+
+
+/* Navbar.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        font-family: "Rubik Wet Paint", system-ui;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 30px;
+    height: 120px;
+}
+
+.logo {
+    color: white;
+    font-size: clamp(1.5rem, -4.5rem + 12vw, 2.25rem);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-size: clamp(1rem, -1rem + 4vw, 1.25rem);
+}
+
+.nav-links li {
+    margin: 0 15px;
+    border-style: none;
+    outline: none;
+    border: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition:  0.3s;
+    border: none;
+    border-style: none;
+    outline: none;
+}
+
+.nav-links a:hover {
+    color: orange;
+    box-shadow:0 0 50px orange;
+
+}
+
+.toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 90px; 
+        left: 0;
+        background-color: black;
+    }
+
+    .nav-links li {
+        margin: 10px  0;
+        margin-left: 30px;
+
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+}
+
